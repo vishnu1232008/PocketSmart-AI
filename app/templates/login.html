@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+    <!-- PocketSmart Logo Header -->
+    <div style="text-align: center; margin-bottom: 25px;">
+        <h1 style="font-size: 32px; font-weight: 800; color: #1e3a8a; margin: 0 0 5px 0;">PocketSmart</h1>
+        <p style="font-size: 14px; color: #475569; font-weight: 600; margin: 0;">AI-Powered Budget Planning</p>
+    </div>
+
+    <!-- Login Form Card -->
+    <div style="background: white; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); padding: 35px 30px; width: 100%; max-width: 400px; border: 1px solid #e2e8f0; box-sizing: border-box;">
+
+        <h2 style="text-align: center; font-size: 22px; font-weight: 700; color: #0f172a; margin-top: 0; margin-bottom: 25px;">Welcome Back</h2>
+
+        <form action="/login" method="post">
+
+            <!-- Username Input -->
+            <div style="margin-bottom: 18px;">
+                <label style="display: block; font-size: 13px; font-weight: 600; color: #334155; margin-bottom: 6px;">Username</label>
+                <div style="position: relative; display: flex; align-items: center;">
+                    <span style="position: absolute; left: 12px; color: #94a3b8; font-size: 14px;">👤</span>
+                    <input type="text" name="username" placeholder="Enter your username" required style="width: 100%; padding: 10px 10px 10px 38px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 13px; outline: none; background: #fafafa; box-sizing: border-box;">
+                </div>
+            </div>
+
+            <!-- Password Input -->
+            <div style="margin-bottom: 8px;">
+                <label style="display: block; font-size: 13px; font-weight: 600; color: #334155; margin-bottom: 6px;">Password</label>
+                <div style="position: relative; display: flex; align-items: center;">
+                    <span style="position: absolute; left: 12px; color: #94a3b8; font-size: 14px;">🔒</span>
+                    <input type="password" name="password" placeholder="Enter your password" required style="width: 100%; padding: 10px 10px 10px 38px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 13px; outline: none; background: #fafafa; box-sizing: border-box;">
+                </div>
+            </div>
+
+            <!-- Forgot Password Link -->
+            <div style="text-align: right; margin-bottom: 22px;">
+                <a href="#" style="color: #2563eb; font-size: 12px; text-decoration: none;">Forgot Password?</a>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" style="width: 100%; background: #1e3a8a; color: white; border: none; padding: 12px; border-radius: 20px; font-size: 14px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 10px rgba(30, 58, 138, 0.2);">
+                Sign In ➔
+            </button>
+        </form>
+
+        <!-- Footer Link -->
+        <div style="text-align: center; margin-top: 20px; font-size: 13px; color: #64748b;">
+            Don't have an account? <a href="/register" style="color: #1e3a8a; font-weight: 600; text-decoration: none;">Create Account</a>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

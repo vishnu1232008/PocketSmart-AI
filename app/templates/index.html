@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; min-height: 100vh;">
+    
+    <!-- Hero Section -->
+    <div style="background: linear-gradient(135deg, #0f172a, #1e3a8a, #1e40af); color: white; text-align: center; padding: 60px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+        <h1 style="font-size: 38px; font-weight: 800; margin: 0 0 10px 0; letter-spacing: -0.5px;">PocketSmart</h1>
+        <h2 style="font-size: 22px; font-weight: 600; color: #93c5fd; margin: 0 0 15px 0;">AI-Powered Budget Planning for Everyday Needs</h2>
+        <p style="max-width: 650px; margin: 0 auto 25px auto; font-size: 15px; color: #cbd5e1; line-height: 1.6;">
+            Make smart financial decisions with AI-assisted budget recommendations for home interior, party, and jewelry purchases. Tailored to help you get the most value for your money.
+        </p>
+        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+            <a href="/home_planner" style="background: #2563eb; color: white; padding: 12px 26px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);">Get Started</a>
+            <a href="/testimonials" style="background: rgba(255, 255, 255, 0.15); color: white; border: 1px solid rgba(255, 255, 255, 0.3); padding: 12px 26px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px;">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Planners Section -->
+    <div class="container" style="max-width: 1050px; margin: 50px auto; padding: 0 20px;">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 style="font-size: 26px; font-weight: 700; color: #0f172a; margin-bottom: 10px;">Our Smart Budget Planners</h2>
+            <p style="color: #64748b; font-size: 14px;">Choose a planner tailored to your needs and get customized AI recommendations in seconds.</p>
+        </div>
+
+        <div style="display: flex; gap: 25px; justify-content: center; flex-wrap: wrap;">
+            
+            <!-- Planner Card 1: Home Interior -->
+            <div style="flex: 1; min-width: 280px; max-width: 320px; background: white; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.04); text-align: center; display: flex; flex-direction: column;">
+                <div style="background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; padding: 25px; font-size: 36px;">
+                    🏠
+                </div>
+                <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-size: 18px; color: #0f172a; margin: 0 0 10px 0; font-weight: 600;">Home Interior Budget Planner</h3>
+                        <p style="color: #64748b; font-size: 13px; line-height: 1.6; margin-bottom: 20px;">
+                            Personalize room decor and furniture budgets. Get AI-generated product suggestions based on your target budget and style preferences.
+                        </p>
+                    </div>
+                    <a href="/home_planner" style="display: block; background: #1e3a8a; color: white; padding: 10px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px;">Open Planner</a>
+                </div>
+            </div>
+
+            <!-- Planner Card 2: Party Budget Planner -->
+            <div style="flex: 1; min-width: 280px; max-width: 320px; background: white; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.04); text-align: center; display: flex; flex-direction: column;">
+                <div style="background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; padding: 25px; font-size: 36px;">
+                    🎉
+                </div>
+                <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-size: 18px; color: #0f172a; margin: 0 0 10px 0; font-weight: 600;">Party Budget Planner</h3>
+                        <p style="color: #64748b; font-size: 13px; line-height: 1.6; margin-bottom: 20px;">
+                            Plan events effortlessly by getting venue, food, and decoration suggestions tailored to your guest count and total budget.
+                        </p>
+                    </div>
+                    <a href="/party_planner" style="display: block; background: #1e3a8a; color: white; padding: 10px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px;">Open Planner</a>
+                </div>
+            </div>
+
+            <!-- Planner Card 3: Jewelry Budget Planner -->
+            <div style="flex: 1; min-width: 280px; max-width: 320px; background: white; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.04); text-align: center; display: flex; flex-direction: column;">
+                <div style="background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; padding: 25px; font-size: 36px;">
+                    💎
+                </div>
+                <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-size: 18px; color: #0f172a; margin: 0 0 10px 0; font-weight: 600;">Jewelry Budget Planner</h3>
+                        <p style="color: #64748b; font-size: 13px; line-height: 1.6; margin-bottom: 20px;">
+                            Find curated jewelry suggestions matched with outfit styles, occasions, and budget limits with optional image matching.
+                        </p>
+                    </div>
+                    <a href="/jewelry_planner" style="display: block; background: #1e3a8a; color: white; padding: 10px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px;">Open Planner</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}

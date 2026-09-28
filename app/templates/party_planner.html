@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div style="max-width: 850px; margin: 30px auto; padding: 20px; background: white; border-radius: 12px; border: 1px solid #e2e8f0;">
+    <h2 style="color: #831843;">Party Budget Planner</h2>
+    <form action="/generate-party" method="post">
+        <div style="margin-bottom: 15px;">
+            <label>Total Budget (₹)</label>
+            <input type="number" name="budget" value="20000" style="width: 100%; padding: 8px; margin-top: 5px;">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 15px;">
+            <div><label>Number of Guests</label><input type="number" name="guests" value="15" style="width: 100%; padding: 8px;"></div>
+            <div><label>Food Cost Per Head (₹)</label><input type="number" name="food_per_head" value="400" style="width: 100%; padding: 8px;"></div>
+        </div>
+        <div style="margin-bottom: 15px;">
+            <label>Decoration Budget (₹)</label>
+            <input type="number" name="decoration_cost" value="3000" style="width: 100%; padding: 8px;">
+        </div>
+        <button type="submit" style="background: #831843; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer;">Generate Plan</button>
+    </form>
+</div>
+{% endblock %}

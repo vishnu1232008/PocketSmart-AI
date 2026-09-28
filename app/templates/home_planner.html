@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div style="max-width: 850px; margin: 30px auto; padding: 20px; background: white; border-radius: 12px; border: 1px solid #e2e8f0;">
+    <h2 style="color: #0f172a;">Home Interior Budget Planner</h2>
+    <form action="/generate-home" method="post">
+        <div style="margin-bottom: 15px;">
+            <label>Target Budget (₹)</label>
+            <input type="number" name="budget" value="5000" style="width: 100%; padding: 8px; margin-top: 5px;">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 15px;">
+            <div><label>Lights</label><input type="number" name="lights" value="2" style="width: 100%; padding: 8px;"></div>
+            <div><label>Ceiling Fans</label><input type="number" name="fans" value="1" style="width: 100%; padding: 8px;"></div>
+            <div><label>Standing Lamps</label><input type="number" name="lamps" value="1" style="width: 100%; padding: 8px;"></div>
+            <div><label>Dining Chairs</label><input type="number" name="chairs" value="2" style="width: 100%; padding: 8px;"></div>
+        </div>
+        <div style="margin-bottom: 15px;">
+            <label>Style: </label>
+            <label><input type="radio" name="style" value="modern" checked> Modern</label>
+            <label><input type="radio" name="style" value="minimalist"> Minimalist</label>
+        </div>
+        <button type="submit" style="background: #1e3a8a; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer;">Generate Plan</button>
+    </form>
+</div>
+{% endblock %}

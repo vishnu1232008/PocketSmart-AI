@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div style="max-width: 850px; margin: 30px auto; padding: 20px; background: white; border-radius: 12px; border: 1px solid #e2e8f0;">
+    <h2 style="color: #713f12;">Jewelry Budget Planner</h2>
+    <form action="/generate-jewelry" method="post">
+        <div style="margin-bottom: 15px;">
+            <label>Target Budget (₹)</label>
+            <input type="number" name="budget" value="15000" style="width: 100%; padding: 8px; margin-top: 5px;">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 15px;">
+            <div><label>Rings Quantity</label><input type="number" name="rings" value="1" style="width: 100%; padding: 8px;"></div>
+            <div><label>Necklaces Quantity</label><input type="number" name="necklaces" value="1" style="width: 100%; padding: 8px;"></div>
+            <div><label>Earrings Quantity</label><input type="number" name="earrings" value="1" style="width: 100%; padding: 8px;"></div>
+        </div>
+        <div style="margin-bottom: 15px;">
+            <label>Metal Type: </label>
+            <label><input type="radio" name="metal" value="gold" checked> Gold</label>
+            <label><input type="radio" name="metal" value="silver"> Silver</label>
+        </div>
+        <button type="submit" style="background: #713f12; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer;">Generate Plan</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; min-height: 100vh; padding-bottom: 40px;">
+
+    <!-- Welcome Header / Hero Banner -->
+    <div style="background: linear-gradient(135deg, #0f172a, #1e3a8a, #1e40af); color: white; text-align: center; padding: 45px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h1 style="font-size: 32px; font-weight: 800; margin: 0 0 8px 0; letter-spacing: -0.5px;">Welcome, sai!</h1>
+        <p style="font-size: 14px; color: #cbd5e1; max-width: 600px; margin: 0 auto; line-height: 1.5;">
+            Displays recent recommendations, saved queries, and personalized insights for the logged-in user.
+        </p>
+    </div>
+
+    <!-- Main Content Container -->
+    <div style="max-width: 1050px; margin: 35px auto 0 auto; padding: 0 20px;">
+        
+        <!-- Planner Cards Grid -->
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+
+            <!-- Card 1: Home Interior -->
+            <div style="flex: 1; min-width: 280px; max-width: 310px; background: white; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.04); display: flex; flex-direction: column;">
+                <div style="height: 140px; background-color: #cbd5e1; background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=500&q=80'); background-size: cover; background-position: center;"></div>
+                <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-size: 16px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Home Budget Planner</h3>
+                        <p style="font-size: 12px; color: #64748b; line-height: 1.5; margin-bottom: 20px;">
+                            Personalize room decor and furniture budgets with AI recommendations tailored to your room type.
+                        </p>
+                    </div>
+                    <a href="/home_planner" style="display: block; text-align: center; background: #1e3a8a; color: white; padding: 10px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px;">Get Started</a>
+                </div>
+            </div>
+
+            <!-- Card 2: Party Budget -->
+            <div style="flex: 1; min-width: 280px; max-width: 310px; background: white; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.04); display: flex; flex-direction: column;">
+                <div style="height: 140px; background-color: #cbd5e1; background-image: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?w=500&q=80'); background-size: cover; background-position: center;"></div>
+                <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-size: 16px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Party Budget Planner</h3>
+                        <p style="font-size: 12px; color: #64748b; line-height: 1.5; margin-bottom: 20px;">
+                            Plan events effortlessly with venue, food, and decor suggestions suited for your budget limit.
+                        </p>
+                    </div>
+                    <a href="/home_planner" style="display: block; text-align: center; background: #1e3a8a; color: white; padding: 10px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px;">Get Started</a>
+                </div>
+            </div>
+
+            <!-- Card 3: Jewelry Budget -->
+            <div style="flex: 1; min-width: 280px; max-width: 310px; background: white; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.04); display: flex; flex-direction: column;">
+                <div style="height: 140px; background-color: #cbd5e1; background-image: url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500&q=80'); background-size: cover; background-position: center;"></div>
+                <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-size: 16px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Jewelry Budget Planner</h3>
+                        <p style="font-size: 12px; color: #64748b; line-height: 1.5; margin-bottom: 20px;">
+                            Find curated jewelry suggestions matched with outfit styles, occasions, and price targets.
+                        </p>
+                    </div>
+                    <a href="/home_planner" style="display: block; text-align: center; background: #1e3a8a; color: white; padding: 10px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px;">Get Started</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Recent Activity Section -->
+        <div style="margin-top: 40px; background: white; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+            <div style="background: #1e3a8a; color: white; padding: 14px 20px; display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 16px;">🕒</span>
+                <h3 style="margin: 0; font-size: 15px; font-weight: 600;">Recent Activity</h3>
+            </div>
+            <div style="padding: 15px 20px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #f1f5f9;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <span style="font-size: 18px;">🏠</span>
+                        <div>
+                            <h4 style="margin: 0; font-size: 14px; color: #0f172a; font-weight: 600;">Home Interior Plan</h4>
+                            <p style="margin: 2px 0 0 0; font-size: 12px; color: #64748b;">Living Room • Budget: $5,000</p>
+                        </div>
+                    </div>
+                    <span style="font-size: 12px; color: #94a3b8;">2 hours ago</span>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #f1f5f9;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <span style="font-size: 18px;">🎉</span>
+                        <div>
+                            <h4 style="margin: 0; font-size: 14px; color: #0f172a; font-weight: 600;">Party Budget Plan</h4>
+                            <p style="margin: 2px 0 0 0; font-size: 12px; color: #64748b;">Birthday Event • Budget: $1,200</p>
+                        </div>
+                    </div>
+                    <span style="font-size: 12px; color: #94a3b8;">Yesterday</span>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <span style="font-size: 18px;">💎</span>
+                        <div>
+                            <h4 style="margin: 0; font-size: 14px; color: #0f172a; font-weight: 600;">Jewelry Recommendation</h4>
+                            <p style="margin: 2px 0 0 0; font-size: 12px; color: #64748b;">Wedding Collection • Budget: $800</p>
+                        </div>
+                    </div>
+                    <span style="font-size: 12px; color: #94a3b8;">3 days ago</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

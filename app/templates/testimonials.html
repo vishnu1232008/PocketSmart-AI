@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container" style="max-width: 1000px; margin: 40px auto; padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    
+    <!-- Testimonials Header -->
+    <div style="text-align: center; margin-bottom: 40px;">
+        <h2 style="font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 10px;">What Our Users Say</h2>
+        <p style="color: #64748b; font-size: 15px; max-width: 600px; margin: 0 auto;">
+            Real experiences from people who have transformed their budget planning with PocketSmart AI.
+        </p>
+    </div>
+
+    <!-- Testimonials Cards Grid -->
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 50px;">
+        
+        <!-- Card 1 -->
+        <div style="flex: 1; min-width: 260px; max-width: 300px; background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); display: flex; flex-direction: column; justify-content: space-between;">
+            <p style="color: #334155; font-size: 14px; line-height: 1.6; margin-top: 0; margin-bottom: 20px;">
+                "PocketSmart AI saved me so much time and money when redecorating my living room. The recommendations were spot on!"
+            </p>
+            <div>
+                <h4 style="margin: 0; font-size: 15px; color: #0f172a; font-weight: 600;">Sarah G.</h4>
+                <p style="margin: 2px 0 0 0; color: #64748b; font-size: 12px;">Home Decor Enthusiast</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div style="flex: 1; min-width: 260px; max-width: 300px; background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); display: flex; flex-direction: column; justify-content: space-between;">
+            <p style="color: #334155; font-size: 14px; line-height: 1.6; margin-top: 0; margin-bottom: 20px;">
+                "Planning events has never been easier. The budget breakdown and itemized suggestions helped me stay within budget without sacrificing quality."
+            </p>
+            <div>
+                <h4 style="margin: 0; font-size: 15px; color: #0f172a; font-weight: 600;">Michael R.</h4>
+                <p style="margin: 2px 0 0 0; color: #64748b; font-size: 12px;">Event Planner</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div style="flex: 1; min-width: 260px; max-width: 300px; background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); display: flex; flex-direction: column; justify-content: space-between;">
+            <p style="color: #334155; font-size: 14px; line-height: 1.6; margin-top: 0; margin-bottom: 20px;">
+                "The jewelry recommendations matched my outfit perfectly thanks to the image upload feature. Highly recommended!"
+            </p>
+            <div>
+                <h4 style="margin: 0; font-size: 15px; color: #0f172a; font-weight: 600;">Priya M.</h4>
+                <p style="margin: 2px 0 0 0; color: #64748b; font-size: 12px;">Fashion & Jewelry</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Call to Action Banner -->
+    <div style="background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; border-radius: 12px; padding: 35px 25px; text-align: center; box-shadow: 0 10px 20px rgba(37, 99, 235, 0.15);">
+        <h3 style="margin: 0 0 10px 0; font-size: 22px; font-weight: 600;">Ready to Optimize Your Budget?</h3>
+        <p style="margin: 0 0 20px 0; font-size: 14px; color: #dbeafe;">
+            Join PocketSmart AI today and start making smarter financial decisions across all areas of your life.
+        </p>
+        <div style="display: flex; gap: 15px; justify-content: center;">
+            <a href="/login" style="background: white; color: #1e3a8a; padding: 10px 22px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px;">Sign In</a>
+            <a href="/register" style="background: rgba(255, 255, 255, 0.2); color: white; border: 1px solid rgba(255, 255, 255, 0.5); padding: 10px 22px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px;">Create Account</a>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

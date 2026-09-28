@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+google-genai
+pydantic
+pydantic-settings
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt
+python-multipart
+jinja2
+pillow
+python-dotenv
